@@ -1,0 +1,45 @@
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color:black;
+    transition: color 0.3s;
+}
+li{
+    list-style: none;
+    transition: 0.3S;
+}
+li:hover{
+    transform: translateX(10px);
+}
+header{
+    background-color:wheat;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    left:0;
+    color:black;
+    z-index:1;
+}
+a:hover{
+    color:blanchedalmond;
+}
+main{
+    margin-top: 70px;
+}
+.cube{
+    background-color: burlywood;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.incube{
+    background-color:rgba(180, 129, 52, 0.918);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    top: 5%;
+    right: 5%;
+}
