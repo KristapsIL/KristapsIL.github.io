@@ -1,6 +1,10 @@
 ul{
     display: flex;
     justify-content: space-around;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    padding-left:0;
+    align-items: center;
 }
 a{
     text-decoration: none;
@@ -8,6 +12,7 @@ a{
     transition: color 0.3s;
 }
 li{
+    padding-bottom: 20px;
     list-style: none;
     transition: 0.3S;
 }
@@ -24,7 +29,7 @@ header{
     z-index:1;
 }
 a:hover{
-    color:blanchedalmond;
+    color:white;
 }
 main{
     margin-top: 70px;
@@ -42,4 +47,38 @@ main{
     position:absolute;
     top: 5%;
     right: 5%;
+}
+.check{
+    display: none;
+}
+.burger{
+    display: none;
+}
+@media (max-width:250px){
+    .check{
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 40px;
+        height: 35px;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .burger{
+        display: block; 
+    }
+    ul {
+        position: absolute;
+        top:100%;
+        left:0;
+        flex-direction: column;
+        background-color: wheat;
+        margin:0;
+        width: 100vw;
+        display: none;
+    }
+    .check:checked + ul{
+        display:flex;
+    }
 }
