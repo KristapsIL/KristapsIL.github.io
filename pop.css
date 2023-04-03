@@ -15,7 +15,7 @@ a{
     transition: color 0.3s;
 }
 li{
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     list-style: none;
     transition: 0.3S;
 }
@@ -30,6 +30,7 @@ header{
     left:0;
     color:black;
     z-index:1;
+
 }
 a:hover{
     color:white;
