@@ -3,6 +3,7 @@ body{
 }
 h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 ul{
     display: flex;
@@ -42,18 +43,18 @@ main{
     margin-top: 70px;
 }
 .cube{
-    background-color: burlywood;
+    background-color: rgb(0, 255, 238);
     width: 300px;
     height: 300px;
     position: relative;
     transition: width 2s;
 }
 .incube{
-    background-color:rgba(180, 129, 52, 0.918);
-    width: 100px;
+    background-color:rgba(0, 0, 0, 0.918);
+    width: 300px;
     height: 100px;
     position:absolute;
-    top: 5%;
+    top: 35%;
     right: 5%;
 }
 .cube:hover{
@@ -83,11 +84,8 @@ main{
         height: 50px;
         display: block; 
     }
-    .burger:hover{
-        display: block;
-        background-image:url("close.svg");
-        width: 50px;
-        height: 50px;
+    .check:checked+ .burger{
+        background-image: url("close.svg");
     }
     ul {
         position: absolute;
@@ -104,10 +102,23 @@ main{
         
     }
 }
+#start{
+    width:100%;
+    height: 100vh;
+    display: grid;
+    background-color: yellow;
+}
 #ex{
     width:100%;
     height: 100vh;
     background-color: aqua;
+    display: grid;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    grid-template-columns: 100vh;
+    grid-template-rows: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 #cont{
     width:100%;
