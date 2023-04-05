@@ -1,6 +1,9 @@
 body{
     margin:0;
 }
+html{
+    scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
     width: 20px;
   }
@@ -66,13 +69,14 @@ main{
         height: 35px;
         opacity: 0;
         cursor: pointer;
-
+        transition: 4s;
     }
     .burger{
         background-image: url("menu.svg");
         width: 50px;
         height: 50px;
         display: block; 
+        transition: 0.2s ease-in;
     }
     ul {
         position: absolute;
@@ -88,10 +92,13 @@ main{
         font-size: larger;
         padding-top: 10px;
         padding-bottom: 10px;
-        
     }
     .check:checked + ul{
+        transition:ease-in 4s;
         display:flex;
+    }
+    .check:checked ~ .burger{
+        background-image: url("close.svg");
     }
 }
 #start{
@@ -139,7 +146,21 @@ main{
     width:100%;
     height: 100vh;
     background-color: black;
+    display: grid;
+    grid-template-columns: 3.3fr 5fr;
+    grid-template-rows: 1fr 2fr 1fr;
 }
+
+.item1{
+    margin-left: 50px;
+    margin-top:50px ;
+    align-items: center;
+    grid-row:1/3;
+}
+.me{
+    border-radius: 100%;
+}
+
 #ex{
     width:100%;
     height: 100vh;
@@ -156,7 +177,7 @@ img{
     display: block;
     transition: transform 0.7s;
 }
-img:hover {
+.img:hover {
     transform: rotate(360deg);
 }
 #cont{
