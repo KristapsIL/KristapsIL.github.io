@@ -1,0 +1,115 @@
+html{
+    scroll-snap-type:y mandatory;
+}
+body{
+    margin:0;
+    background-color: var(--col2);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:var(--lcol)
+}
+html{
+    --col:#10466B;
+    --col2:#96CCEB;
+    --col3:#F2E8E0;
+    --col4:#6BD2D5;
+    --col5:rgb(255, 242, 0);
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 20px;
+  }
+::-webkit-scrollbar-track{
+    background-color: var(--col);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--col4); 
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--col5);
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--col);
+    top:0;
+    left: 0;
+    z-index: 1;
+    right:0;
+    text-align: right;
+    position: fixed;
+}
+
+main{
+    margin-top: 50px;
+    background-color:var(--col2);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+    overflow: hidden;
+    scroll-snap-align:start;
+    height: 100vh;
+  }
+div{
+    position: relative;
+    text-align: center;
+    margin-top:10vh;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw
+    
+}
+.atext{
+    margin-top: 20px;
+    font-size: 200%;
+    color:var(--col5);
+    position: absolute;
+}
+li:hover{
+    transform: translateX(10px);
+}
+ul{
+    display: flex;
+    justify-content:left;
+    font-size: large;
+    align-items:center;
+}
+a{
+    color: var(--col3);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 150%;
+}
+li{ 
+    padding-bottom: 4px;
+    list-style: none;
+    transition: 0.3S;
+}
+a:hover{
+    cursor: pointer;
+    color:var(--col4);
+}
+@media (max-width:600px){
+    ul {
+        position: absolute;
+        top:100%;
+        left:0;
+        flex-direction: column;
+        background-color: #ffff00;
+        margin:0;
+        width: 100vw;
+        display: none;
+    }
+    li{
+        font-size: larger;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

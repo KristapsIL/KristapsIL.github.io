@@ -1,0 +1,32 @@
+[
+    {
+        "darit":"Dators",
+        "text":"Pa vasaru spēlēju datora speles ",
+        "img":"computer.jpg"
+    },
+    {
+        "darit":"Labošana",
+        "text":"Palīdzēju tētim labot traktoru",
+        "img":"tractor.jpg"
+    },
+    {
+        "darit":"Work",
+        "text":"Strādju manas ģimenes laukos",
+        "img":"work.jpg"
+    },
+    {
+        "darit":"Govis",
+        "text":"Govīm barību devu",
+        "img":"cows.jpg"
+    },
+    {
+        "darit":"malka",
+        "text":"Malku skaldiju",
+        "img":"firewood.jpg"
+    },
+    {
+        "darit":"Graudi",
+        "text":"Graudus palīdzēju kūlt",
+        "img":"grain.jpg"
+    }
+]
