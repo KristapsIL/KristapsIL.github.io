@@ -1,5 +1,5 @@
 const response = await fetch("vasara.json")
-const vasara = await response.json();
+const vasara = await response.json()
 console.log(vasara)
 
 const main = document.getElementById("main")
